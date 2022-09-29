@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include nsa_code *.css
+recursive-include nsa_code *.csv
+recursive-include nsa_code *.html
+recursive-include nsa_code *.ico
+recursive-include nsa_code *.js
+recursive-include nsa_code *.json
+recursive-include nsa_code *.md
+recursive-include nsa_code *.png
+recursive-include nsa_code *.py
+recursive-include nsa_code *.svg
+recursive-include nsa_code *.txt
+recursive-exclude nsa_code *.pyc
