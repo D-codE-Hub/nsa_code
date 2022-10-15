@@ -1,0 +1,30 @@
+{
+ "category": "Modules",
+ "charts": [
+  {
+   "chart_name": "Project Summary NSA",
+   "label": "Open Projects"
+  }
+ ],
+ "creation": "2022-09-29 16:37:21.017445",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends": "Projects",
+ "extends_another_page": 1,
+ "hide_custom": 0,
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "NSA",
+ "links": [],
+ "modified": "2022-09-29 16:38:41.027452",
+ "modified_by": "Administrator",
+ "module": "NSA-codE",
+ "name": "NSA",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
+ "shortcuts": []
+}

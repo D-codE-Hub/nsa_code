@@ -95,13 +95,11 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-#	"*": {
-#		"on_update": "method",
-#		"on_cancel": "method",
-#		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	"Issue": {
+		"validate": "nsa_code.nsa_code.nsa_code.re_open_projects",	
+	},
+}
 
 # Scheduled Tasks
 # ---------------
@@ -179,3 +177,12 @@ user_data_fields = [
 #	"nsa_code.auth.validate"
 # ]
 
+fixtures = [{
+		"dt": "Custom Field", 
+		"filters":[["name", "in", [
+									'Project-project_number',
+									'Project-lrd_code',
+									'Project-issue_status'
+								  ]
+				  ]]
+	}]
