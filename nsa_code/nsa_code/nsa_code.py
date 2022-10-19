@@ -8,8 +8,9 @@ def re_open_projects(doc, method):
 	# called via Issue hook
 	if doc.project and doc.status =='Open':
 		pr = frappe.get_doc( "Project",doc.project)
-		if pr.status =="Completed":
-			pr.issue_status='Re-Open'
-			pr.save(ignore_permissions=True)
+		pr.status =="Open"
+		pr.issue_status='Re-Open'
+		pr.save(ignore_permissions=True)
 
 
+	
