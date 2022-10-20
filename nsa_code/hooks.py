@@ -86,7 +86,7 @@ app_license = "MIT"
 # DocType Class
 # ---------------
 # Override standard doctype classes
-# /home/vasco/nsa-bench/apps/nsa_code/nsa_code/overrides/custom_project.py
+
 override_doctype_class = {
 	"Project": "nsa_code.overrides.custom_project.CustomProject"
 }
@@ -97,7 +97,7 @@ override_doctype_class = {
 
 doc_events = {
 	"Issue": {
-		"on_update": "nsa_code.nsa_code.nsa_code.re_open_projects",	
+		"on_update": "nsa_code.nsa_code.nsa_code.create_task_from_issue",	
 	},
 }
 

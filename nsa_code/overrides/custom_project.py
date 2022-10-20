@@ -9,7 +9,7 @@ from frappe.utils import add_days, flt, get_datetime, get_time, get_url, nowtime
 
 class CustomProject(Project):
 	def update_percent_complete(self):
-		# frappe.throw("hello")
+		
 		if self.percent_complete_method == "Manual":
 			if self.status == "Completed":
 				self.percent_complete = 100
@@ -60,9 +60,7 @@ class CustomProject(Project):
 			return
 
 		if self.percent_complete == 100:
-			if frappe.db.exists("Issue", {"project": self.name, "status": 'Open'}):
-				self.status = "Open"
-				frappe.msgprint('Can Not change the status to Completed due to an Open Issue is linked with Project')
-				return
 			self.status = "Completed"
+		else:
+			self.status = "Open"
 		
