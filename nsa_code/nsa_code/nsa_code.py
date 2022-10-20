@@ -11,6 +11,7 @@ def create_task_from_issue(doc, method):
 			task = frappe.new_doc("Task")
 			task.status = "Open"
 			task.subject = doc.subject
+			task.issue = doc.name
 			task.description =doc.description
 			task.project = doc.project
 			task.save(ignore_permissions=True)
