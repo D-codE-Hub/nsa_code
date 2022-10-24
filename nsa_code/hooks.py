@@ -182,7 +182,13 @@ fixtures = [{
 		"filters":[["name", "in", [
 									'Project-project_number',
 									'Project-lrd_code',
-									'Project-issue_status'
+									'Project-issue_status',
+									'Item-warehouse_location',
+									'Item-suit',
+									'Item-bay',
+									'Item-column_break_32',
+									'Item-level',
+									'Item-position'
 								  ]
 				  ]]
 	}]
