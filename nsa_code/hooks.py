@@ -184,7 +184,7 @@ fixtures = [{
 									'Project-lrd_code',
 									'Project-issue_status',
 									'Item-warehouse_location',
-									'Item-suit',
+									'Item-suite',
 									'Item-bay',
 									'Item-column_break_32',
 									'Item-level',
