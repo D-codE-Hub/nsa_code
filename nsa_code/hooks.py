@@ -188,7 +188,13 @@ fixtures = [{
 									'Item-bay',
 									'Item-column_break_32',
 									'Item-level',
-									'Item-position'
+									'Item-position',
+									'Asset Movement-verification',
+									'Asset Movement-blank_field',
+									'Asset Movement-column_break_11',
+									'Asset Movement-signature',
+									'Asset Movement-signed_by',
+									'Asset Movement-date',
 								  ]
 				  ]]
 	}]
